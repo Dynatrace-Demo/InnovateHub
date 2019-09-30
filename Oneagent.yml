@@ -1,5 +1,5 @@
 --- 
-- hosts: 34.87.117.96
+- hosts: 
   become: yes
   tasks:
     - name: stop oneagent
