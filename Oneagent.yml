@@ -1,6 +1,7 @@
 --- 
 - hosts: AppHost
   become: yes
+  hosts: all
   tasks:
     - name: stop oneagent
       systemd: name=oneagent state=stopped
