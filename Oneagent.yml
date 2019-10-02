@@ -2,8 +2,10 @@
 - hosts: AppHost
   become: yes
   tasks:
-    - name: stop oneagent
+    - name: Open
       systemd: name=oneagent state=stopped
+      when: state == "OPEN"
+
       
       
       
