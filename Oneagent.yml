@@ -4,7 +4,7 @@
   tasks:
     - name: stop oneagent
       systemd: name=oneagent state=stopped
-      when: state == "OPEN"
+      when: state == "CLOSE"
 
       
       
